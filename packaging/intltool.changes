@@ -1,0 +1,23 @@
+* Tue Apr 13 2010 Ross Burton <ross@linux.intel.com> 0.41.0
+- Drop comment patch, it's not required by Evolution any more
+
+* Wed Mar 10 2010 Ross Burton <ross@linux.intel.com> 0.41.0
+- Add patch to preseve comments in XML sources
+
+* Mon Feb 1 2010 Zhu Yanhai <yanhai.zhu@linux.intel.com> 0.41.0
+- Switch to build with spectacle
+
+* Thu Sep 24 2009 Zhang Qiang <qiang.z.zhang@intel.com> 0.41.0
+- Update to 0.41.0
+
+* Tue Apr 21 2009 Ding Jian-feng <jian-feng.ding@intel.com> 0.40.6
+- Update to 0.40.6
+
+* Fri Feb 20 2009 Zhang, Qiang Z<qiang.z.zhang@intel.com> 0.40.5
+- Update to 0.40.5
+
+* Tue Dec 16 2008 Arjan van de Ven <arjan@linux.intel.com> 0.40.3
+- Clean up the spec
+
+* Sat Sep 20 2008 Anas Nashif <anas.nashif@intel.com> 0.40.3
+- update to version 0.40.3
