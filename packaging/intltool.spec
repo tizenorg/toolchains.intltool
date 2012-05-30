@@ -11,6 +11,7 @@ Group:      Development/Tools
 License:    GPLv2 with exceptions
 URL:        http://www.gnome.org
 Source0:    http://download.gnome.org/sources/intltool/0.41/%{name}-%{version}.tar.gz
+Source1001: packaging/intltool.manifest 
 Patch0:     schemas-merge.patch
 Requires:   patch
 Requires:   automake
@@ -35,6 +36,7 @@ them in the po files.
 %patch0 -p1
 
 %build
+cp %{SOURCE1001} .
 
 %configure --disable-static
 make %{?jobs:-j%jobs}
@@ -50,6 +52,7 @@ rm -rf %{buildroot}
 
 
 %files
+%manifest intltool.manifest
 %defattr(-,root,root,-)
 %doc AUTHORS COPYING README
 %doc %{_mandir}/man*/*
