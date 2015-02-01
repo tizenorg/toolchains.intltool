@@ -19,6 +19,7 @@ Requires:   perl(XML::Parser)
 BuildRequires:  perl(XML::Parser)
 BuildRequires:  gettext-tools
 
+
 %description
 This tool automatically extracts translatable strings from oaf, glade,
 bonobo ui, nautilus theme, .desktop, and other data files and puts
