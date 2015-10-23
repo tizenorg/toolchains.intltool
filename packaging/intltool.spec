@@ -6,7 +6,8 @@
 Name:       intltool
 Summary:    Utility for internationalizing various kinds of data files
 Version:    0.41.0
-Release:    1
+Release:    %{?release_prefix:%{release_prefix}.}1.43.%{?dist}%{!?dist:tizen}
+VCS:        external/intltool#submit/trunk/20121019.111018-0-gd81773c84515572767eefac9a18616e6cf7a6a0c
 Group:      Development/Tools
 License:    GPLv2 with exceptions
 URL:        http://www.gnome.org
@@ -58,3 +59,47 @@ rm -rf %{buildroot}
 %{_datadir}/aclocal/*
 
 
+%changelog
+* Mon Sep 16 2013 UkJung Kim <ujkim@samsung.com> - submit/trunk/20121019.111018 
+- PROJECT: external/intltool
+- COMMIT_ID: d81773c84515572767eefac9a18616e6cf7a6a0c
+- PATCHSET_REVISION: d81773c84515572767eefac9a18616e6cf7a6a0c
+- CHANGE_OWNER: \"UkJung Kim\" <ujkim@samsung.com>
+- PATCHSET_UPLOADER: \"UkJung Kim\" <ujkim@samsung.com>
+- CHANGE_URL: http://slp-info.sec.samsung.net/gerrit/103459
+- PATCHSET_REVISION: d81773c84515572767eefac9a18616e6cf7a6a0c
+- TAGGER: UkJung Kim <ujkim@samsung.com>
+- Gerrit patchset approval info:
+- UkJung Kim <ujkim@samsung.com> Verified : 1
+- Newton Lee <newton.lee@samsung.com> Code Review : 2
+- CHANGE_SUBJECT: Initial commit
+- [Version] 0.41.0
+- [Project] GT-I8800
+- [Title] Initial commit
+- [BinType] PDA
+- [Customer] Open
+- [Issue#] N/A
+- [Problem] N/A
+- [Cause] N/A
+- [Solution]
+- [Team] SCM
+- [Developer] UkJung Kim <ujkim@samsung.com>
+- [Request] N/A
+- [Horizontal expansion] N/A
+- [SCMRequest] N/A
+* Tue Apr 13 2010 Ross Burton <ross@linux.intel.com> 0.41.0
+- Drop comment patch, it's not required by Evolution any more
+* Wed Mar 10 2010 Ross Burton <ross@linux.intel.com> 0.41.0
+- Add patch to preseve comments in XML sources
+* Mon Feb  1 2010 Zhu Yanhai <yanhai.zhu@linux.intel.com> 0.41.0
+- Switch to build with spectacle
+* Thu Sep 24 2009 Zhang Qiang <qiang.z.zhang@intel.com> 0.41.0
+- Update to 0.41.0
+* Tue Apr 21 2009 Ding Jian-feng <jian-feng.ding@intel.com> 0.40.6
+- Update to 0.40.6
+* Fri Feb 20 2009 Zhang, Qiang Z<qiang.z.zhang@intel.com> 0.40.5
+- Update to 0.40.5
+* Tue Dec 16 2008 Arjan van de Ven <arjan@linux.intel.com> 0.40.3
+- Clean up the spec
+* Sat Sep 20 2008 Anas Nashif <anas.nashif@intel.com> 0.40.3
+- update to version 0.40.3
